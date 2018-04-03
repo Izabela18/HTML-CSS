@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="sidenav.js"></script>
+  <script src="study.js"></script>
+  <title>PROJEKT</title>
+</head>
+
+<body>
+  <div class="toolbar">
+    <div class="logo">
+      <img src="images/logo2.png" alt="student_link" id="logotype">
+    </div>
+    <div id="topnav">
+
+
+      <a class="links" href="#">Allmänna Villkor</a><br>
+      <a class="links" href="#">Om StudentLink</a>
+    </div>
+  </div>
+  <header>
+    <div class="profilbild">
+      <img id="pb" src="images/profilepic.png" alt="profilbild">
+    </div>
+    <div class="info">
+      <h1>Användare</h1>
+    </div>
+    <div class="tools">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="#">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+  </header>
+  <nav>
+      <span id="navbtn" onclick="openNav()">&#9776;</span>
+	  <div class="tools_mobil">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="#">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HEM</a>
+  <a href="nyheter.html">NYHETER</a>
+  <a href="studentshop.html">KÖP/BYT/SÄLJ</a>
+  <a href="boende.html">BOENDE</a>
+  <a href="forum.html">FORUM</a>
+  <a href="#">ALLMÄNNA VILLKOR</a>
+  <a href="#">OM STUDENTLINK</a>
+</div>
+    <div class="menues">
+      <ul>
+
+		  <li class="dropdown"><a href="index.html" class="dropdown-btn">HEM</a>
+          <li class="dropdown"><a href="nyheter.html" class="dropdown-btn">NYHETER</a>
+            <div class="dropdown-menu">
+
+            </div>
+          </li>
+      </ul>
+      <ul>
+        <li>
+          <li class="dropdown"><a href="studentshop.html" class="dropdown-btn">KÖP/BYT/SÄLJ</a>
+
+          </li>
+
+            <li>
+              <li class="dropdown"><a href="boende.html" class="dropdown-btn">BOENDE</a>
+
+              </li>
+              <li>
+                <li class="dropdown"><a href="forum.html" class="dropdown-btn">FORUM</a>
+
+                </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div id="study-body">
+ <div class="intro">
+  <h2>Studentlinks Läxhjälp</h2>
+</div>
+    <div id="study-form">
+      <div id="checkboxes"><h3>Välj Ämne</h3>
+		  <input id="natur" type="checkbox" value="natur" checked><p class="ämne">Natur</p>
+        <input id="humaniora" type="checkbox" value="humaniora" checked><p class="ämne">Humaniora</p>
+        <input id="teknik" type="checkbox" value="teknik" checked><p class="ämne">Teknik</p>
+      </div>
+      <h3>Eller skapa ett nytt inlägg</h3>
+      <input placeholder="Namn" id="input-name" type="text" class="input" value=""></br>
+
+      <input placeholder="Rubrik" id="input-header" type="text" class="input" value=""></br>
+      <textarea placeholder="Beskrivning" id="input-text" rows="5" cols="50"></textarea><br>
+      <input id="natur1" type="checkbox" value="natur"><p class="ämne">Natur</p>
+      <input id="humaniora1" type="checkbox" value="humaniora"><p class="ämne">Humaniora</p>
+      <input id="teknik1" type="checkbox" value="teknik"><p class="ämne">Teknik</p><br>
+      <button type="button" id="post">Lägg till nytt inlägg</button>
+
+    </div>
+  </div>
+
+  </div>
+  <footer>
+	  <div class="social">
+	  <img class="socialicon" src="images/facebook_30x30.png" alt="facebook">
+	  <img class="socialicon" src="images/instagram30x30.png" alt="instagram">
+	  <img class="socialicon" src="images/twitter-b_30x30.png" alt="twitter">
+	  </div>
+  </footer>
+
+</body>
+
+</html>

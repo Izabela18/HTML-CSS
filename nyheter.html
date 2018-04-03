@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <script src="sidenav.js"></script>
+  <script src="news2.js"></script>
+  <title>PROJEKT</title>
+</head>
+
+<body>
+  <div class="toolbar">
+    <div class="logo">
+      <img id="loggan" src="images/logo2.png" alt="student_link" id="logotype">
+    </div>
+    <div id="topnav">
+
+
+      <a class="links" href="#">Allmänna Villkor</a><br>
+      <a class="links" href="#">Om StudentLink</a>
+    </div>
+  </div>
+  <header>
+    <div class="profilbild">
+      <img id="pb" src="images/profilepic.png" alt="profilbild">
+    </div>
+    <div class="info">
+      <h1>Användare</h1>
+    </div>
+    <div class="tools">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+  </header>
+  <nav>
+      <span id="navbtn" onclick="openNav()">&#9776;</span>
+	  <div class="tools_mobil">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="nyheter.html">NYHETER</a>
+  <a href="studentshop.html">KÖP/BYT/SÄLJ</a>
+  <a href="studenthelp">STUDIEHJÄLP</a>
+  <a href="boende.html">BOENDE</a>
+  <a href="forum.html">FORUM</a>
+  <a href="#">ALLMÄNNA VILLKOR</a>
+  <a href="#">OM STUDENTLINK</a>
+</div>
+    <div class="menues">
+      <ul>
+        <li>
+          <li class="dropdown"><a href="nyheter.html" class="dropdown-btn">NYHETER</a>
+            <div class="dropdown-menu">
+
+            </div>
+          </li>
+      </ul>
+      <ul>
+        <li>
+          <li class="dropdown"><a href="studentshop.html" class="dropdown-btn">KÖP/BYT/SÄLJ</a>
+
+          </li>
+          <li>
+            <li class="dropdown"><a href="studentstudy.html" class="dropdown-btn">STUDIEHJÄLP</a>
+
+            </li>
+            <li>
+              <li class="dropdown"><a href="boende.html" class="dropdown-btn">BOENDE</a>
+
+              </li>
+              <li>
+                <li class="dropdown"><a href="forum.html" class="dropdown-btn">FORUM</a>
+
+                </li>
+      </ul>
+    </div>
+
+  </nav>
+<!--jennies kod börjar här-->
+  <main id="nyhetssidan">
+    <div class="rubriknews">
+      <h1 class="nyheter">Nyheter</h1>
+    </div>
+    <div class="flex-container-news0">
+      <div class="flex-container-news1">
+        <div class="flex-item-newsbild1">
+          <img id="bild1news"src="filmfestival.jpg" alt="göteborg filmfestival">
+        </div>
+        <div class="flex-item-newstext1">
+          <h2><a href="https://mecenat.com/se/goteborgs-film-festival">Studentrabatt på Göteborgsfilmfestival</a></h2>
+          <p>Gratis festivalarmband vid köp av en filmbiljett! Göteborg Film Festival är Nordens största filmfestival med 160 000 besök varje år.  Mellan 27 januari - 6 februari visas 457 filmer från 84 länder, allt från stora Hollywoodpremiärer till små indiepärlor.</p>
+        </div>
+      </div>
+
+  <div class="flex-container-news2">
+     <div class="flex-item-newsbild2">
+      <img id="bild2news"src="ex2paint.png" alt="sgs studentbostäder">
+    </div>
+    <div class="flex-item-newstext2">
+      <h2><a href="http://www.gp.se/nyheter/debatt/vissa-studenter-f%C3%A5r-nobben-att-st%C3%A5-i-bostadsk%C3%B6-1.530627">Inte alla studenter som får ställa sig i bostadskö</a></h2>
+      <p>De studerande på Dansforum får fortfarande inte ställa sig i kö för att få studentbostad hos Stiftelsen Göteborgs Studentbostäder (SGS) och det kommunala bolaget Boplats Göteborg.</p>
+    </div>
+  </div>
+    <div class="flex-container-news3">
+    <div class="flex-item-newsbild3">
+      <img id="bild3news"src="bildnyhet3.jpg" alt="invigning chalmers"></div>
+    <div class="flex-item-newstext3">
+        <h2><a href="http://www.gp.se/nyheter/g%C3%B6teborg/chalmers-inviger-m%C3%A5ngmiljonprojekt-1.4638159">Chalmers inviger mångmiljonprojekt</a></h2>
+        <p>Chalmers ombyggnad av samhällsbyggnadshuset är klar. Arkitekten och före detta eleven Ulla Antonsson har använt egna erfarenheter i processen.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="navnasta">
+    <ul>
+      <li><a class="nasta" href="news2.html">Nästa</a></li>
+     </ul>
+  </div>
+  </div>
+  <div class="flex-container-slides">
+    <div class="flex-item-slideNews1">
+      <img class="slidenews" name="slidenyhet">
+    </div>
+    <div class="flex-item-content-news">
+       <h1 class="medlemserbjudande">Medlemserbjudande! Få rabatt på högskoleguiden.se, ange rabattkod "studentlink" när du betalar.</h1>
+     </div>
+  </div>
+</main>
+<!--jennies kod slutar-->
+  <footer>
+	  <div class="social">
+	  <img class="socialicon" src="images/facebook_30x30.png" alt="facebook">
+	  <img class="socialicon" src="images/instagram30x30.png" alt="instagram">
+	  <img class="socialicon" src="images/twitter-b_30x30.png" alt="twitter">
+	  </div>
+  </footer>
+
+</body>
+
+</html>

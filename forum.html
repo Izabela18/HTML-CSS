@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="material-components-web/material-components-web.js"></script>
+
+  <link href="material-components-web/material-components-web.css" rel="stylesheet">
+  <link href="material-components-web/material-components-web-extra.css" rel="stylesheet">
+  <script src="sidenav.js"></script>
+  <script src="forum.js"></script>
+  <title>PROJEKT</title>
+</head>
+
+<body>
+  <div class="toolbar">
+    <div class="logo">
+      <img id="loggan" src="images/logo2.png" alt="student_link" id="logotype">
+    </div>
+    <div id="topnav">
+
+
+      <a class="links" href="#">Allmänna Villkor</a><br>
+      <a class="links" href="#">Om StudentLink</a>
+    </div>
+  </div>
+  <header>
+    <div class="profilbild">
+      <img id="pb" src="images/profilepic.png" alt="profilbild">
+    </div>
+    <div class="info">
+      <h1>Användare</h1>
+    </div>
+    <div class="tools">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+  </header>
+  <nav>
+      <span id="navbtn" onclick="openNav()">&#9776;</span>
+	  <div class="tools_mobil">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="nyheter.html">NYHETER</a>
+  <a href="studentshop.html">KÖP/BYT/SÄLJ</a>
+  <a href="studentstudy.html">STUDIEHJÄLP</a>
+  <a href="boende.html">BOENDE</a>
+  <a href="forum.html">FORUM</a>
+  <a href="#">ALLMÄNNA VILLKOR</a>
+  <a href="#">OM STUDENTLINK</a>
+</div>
+    <div class="menues">
+      <ul>
+        <li>
+          <li class="dropdown"><a href="nyheter.html" class="dropdown-btn">NYHETER</a>
+            <div class="dropdown-menu">
+
+            </div>
+          </li>
+      </ul>
+      <ul>
+        <li>
+          <li class="dropdown"><a href="studentshop.html" class="dropdown-btn">KÖP/BYT/SÄLJ</a>
+
+          </li>
+          <li>
+            <li class="dropdown"><a href="studentstudy.html" class="dropdown-btn">STUDIEHJÄLP</a>
+
+            </li>
+            <li>
+              <li class="dropdown"><a href="boende.html" class="dropdown-btn">BOENDE</a>
+
+              </li>
+              <li>
+                <li class="dropdown"><a href="forum.html" class="dropdown-btn">FORUM</a>
+
+                </li>
+      </ul>
+    </div>
+  </nav>
+  <article id="forum-body">
+    <div class="head1">
+        <h2>StudentLink's Forum</h2>
+    </div>
+    <div class="introduction">
+      <nav>
+        <div class="head-name">
+          <div class="sok">
+            <a id="menu-drop" href="#"><i class="material-icons md-36">dehaze</i></a>
+            <input type="text" id="my-textfield"  placeholder="Sök:">
+            <a href="#"><i id="glaset" class="fa fa-search" aria-hidden="true"></i>
+            <p id="addanchor">Lägg till ett inlägg!</p>
+              <a id="add-plus" href="#"><i  class="material-icons md-36">add</i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="drawer" class="drawer1">
+      <a id="a-drawer" href="#"><i id="close-drawer" class="material-icons">clear</i></a>
+      <!--<h3 id="header-drawer">Kategorier</h3>-->
+      <nav id="nav-text">
+        <a href="#">Skola</a>
+        <a href="#">Arbete</a>
+        <a href="#">Boende</a>
+        <a href="#">Hobby</a>
+        <a href="#">Teknik/Data</a>
+        <a href="#">Litteratur</a>
+        <a href="#">Sport</a>
+        <a href="#">Natur</a>
+        <a href="#">Samhälle</a>
+        <a href="#">Kroppen</a>
+      </nav>
+    </nav>
+
+    </div>
+
+    <div id="new-thread">
+      <div id="thread-box">
+        <a href="#"><i id="close-box" class="material-icons">clear</i></a>
+        <h2>Skapa en nytt inlägg</h2>
+        <p>Bestäm vad du vill diskutera! Välj kategori och rubrik, skriv dina tankar/frågor/annat och invänta svaren från alla andra studenter här ute!</p>
+        <form id="form" action="forum.html" method="post">
+          <h3>Kategori</h3>
+          <input id="skola" type="checkbox" name="Skola" value="skola">Skola
+          <input id="arbete" type="checkbox" name="Arbete" value="arb">Arbete
+          <input id="bo" type="checkbox" name="Boende" value="bo">Boende
+          <input id="hobby" type="checkbox" name="Hobby" value="hobby">Hobby
+          <input id="tekdat" type="checkbox" name="TekDat" value="tek">Teknik/Data
+          <input type="checkbox" name="Litt" value="litt">Litteratur
+          <input type="checkbox" name="Sport" value="spo">Sport
+          <input type="checkbox" name="Natur" value="nat">Natur
+          <input type="checkbox" name="Sam" value="sam">Samhälle
+          <input type="checkbox" name="Kroppen" value="kroppen">Kroppen
+          <p>Ange rubrik för inlägget:</p>
+          <textarea id="forum-rubrik" name="name" rows="1" cols="60"></textarea>
+          <div class="text-area">
+            <legend>Forumpost</legend>
+            <textarea id="content-post" name="name" rows="8" cols="80" placeholder="Skriv här:"></textarea>
+          </div>
+          <button type="button" id="posta">Posta</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <div id="inlagg">
+        <div id="pre-made">
+          <div id="pre-color">
+            <div id="pre1" class="divclass">
+              <h3>Mobiltips</h3>
+              <p>Hej StudentLink. Jag har lite funderingar över vilken mobil jag ska köpa. En Apple eller Android? Alla mina vänner har Apple, men jag är ingen mainstreamperson och tänker att det kanske skulle vara bättre då med Android, eller?</p>
+              <button id="button1" class="svara" type="button" name="button">Svara</button>
+            </div>
+            <div id="pre2" class="divclass">
+              <h3>Tjenare StudentLink, har ni bra tips på Haburgerhak?</h3>
+              <p>Hallå allihopa! Första gången ute i GBG och jag och polarna funderar på att dra och käka på något haburgerhak. Känner ni till något bra ställe? Har hört att Göteburgare ska vara rätt nice! Men det kanske finns flera lite mindre, trevligare ställen? Svara snabbt, då detta gäler endast ikväll! Åker nämligen imorn.</p>
+              <button id="button2" class="svara" type="button" name="button">Svara</button>
+            </div>
+            <div id="pre3" class="divclass">
+              <h3>Hjälp mig StudentLink</h3>
+              <p>Hej SL! Jag är en kille på 19 solsnurr. Jag behöver er hjälp. Jag går webbutveckling på en yrkeshögskola i GBG och vi jobbar just nu med Sass. OCH JAG FATTAR INGENTING! Vad ska jag göra? Kollar på guider på YouTube och frågar hjälp av klasskompisar. Men det slutar bara med att jag ler och nickar... Asså fattar inget. Hjälp mig SL! / P&amp;K Andreas</p>
+              <div id="svaret">
+                <p>Hej Andreas!
+                Att känna såhär är i din situation är väldigt vanligt. Har du prövat att prata med din lärare om det? Eller kolla om du hittar några tutorials på YouTube?
+                Lycka till!
+                //Moderatorerna
+                </p>
+              </div>
+              <button id="button3" class="svara" type="button" name="button">Svara</button>
+            </div>
+          </div>
+        </div>
+  </article>
+  <footer>
+	  <div class="social">
+	  <img class="socialicon" src="images/facebook_30x30.png" alt="facebook">
+	  <img class="socialicon" src="images/instagram30x30.png" alt="instagram">
+	  <img class="socialicon" src="images/twitter-b_30x30.png" alt="twitter">
+	  </div>
+  </footer>
+
+</body>
+
+</html>

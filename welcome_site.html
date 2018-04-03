@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>welcome</title>
+
+  <script src="material-components-web/material-components-web.js"></script>
+  <script src="welcome_java.js" type="text/javascript" rel="javascript"></script>
+  <link href="material-components-web/material-components-web.css" rel="stylesheet">
+  <link href="material-components-web/material-components-web-extra.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="welcome_style.css">
+</head>
+
+<body class="mdc-typography">
+<div id="iza" class="mdc-typography">
+  <div id="info">
+    <div id="demo">
+    <h1 class="mdc-typography--display3 mdc-typography--adjust-margin">Välkommen till StudentsLink!</h1>
+    </div>
+    <p class="info2" class="mdc-typography--display1 mdc-typography--adjust-margin">Här kan du köpa, sälja, byta vad som helst, hyra boende eller umgås med andra studenter från Göteborg. Logga in eller sign up för att bli en medlem av den fantastiska studentsnätverk.</p>
+  </div>
+  <div id="orange">
+    <img id="aaa" src="bilder/student2.jpg" alt="students_photo1" width="450" height="500">
+    <div id="sl">
+    <img src="bilder/logo2.png" alt="student_link" id="logos">
+    <div id="login"></div>
+      <form action="index.html">
+        <fieldset>
+          <legend>Logga in:</legend>Användarnamn
+          <br>
+          <input type="text" name="user" value="Mickey" style="text-align:center"><br> Lösenord
+          <br>
+          <input type="text" name="password" value="Mouse" style="text-align:center"><br><br>
+          <a href="index.html"><button>Logga in</button></a>
+        </fieldset>
+      </form>
+    </div>
+
+    <img id="bbb" src="bilder/student6.jpg"  alt="students_photo2"  width="450" height="500">
+
+  </div>
+
+  <div id="join">
+
+    <p id="md" class="mdc-typography--display1">Vill du bli en medlem?</p>
+
+    <button id="myBtn">Registrera dig här</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Sign up</h2>
+        </div>
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <fieldset>
+              <legend>Registration:</legend>
+              Användarnamn:<br>
+              <input type="text" name="user" value="Mickey"><br> Lösenord:
+              <br>
+              <input type="text" name="password" value="Mouse"><br>Repetera lösenord:
+              <br>
+              <input type="text" name="password2" value="Mouse"><br>E-post:
+              <br>
+              <input type="text" name="e-post" value="user.name@gmail.com"><br>
+              <button formaction="frontpage/projekt/index.html">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+}
+
+#info {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 15rem;
+  background-color: darkgrey;
+  text-align: center;
+  color: black;
+  padding: 30px 0 30px 0;
+}
+
+#demo {
+  width: auto;
+  background-color: #fcb906;
+  width: 100%;
+  margin: 0;
+  color: white;
+  height: 3.0rem;
+  padding: 20px 0 20px 0;
+}
+
+#orange {
+  background-color: #fcb906;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+
+#logos {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#sl {
+  margin: 20px 100px 50px 100px;
+}
+
+#login {
+  margin: 60px 200px 200px 280px;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#join {
+  width: 100%;
+  height: 9.0rem;
+  background-color: darkgrey;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+}
+
+#aaa {
+  border-radius: 0% 50% 0% 50%;
+  border: solid 1px black;
+}
+
+#bbb {
+  border-radius: 50% 0 50% 0%;
+  border: solid 1px black;
+}
+
+#md {
+  font-size: 1.2rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 2px solid #888;
+  width: 80%;
+  animation-name: slidein;
+  animation-duration: 0.8s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover, .c lose:focus {
+  color: lightgrey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #46494f;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+@media (min-width: 1117px) {
+  body {
+    margin: 0;
+  }
+  #info {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 22rem;
+    background-color: darkgrey;
+    text-align: center;
+    font-size: 2.0rem;
+    color: black;
+    padding: 30px 0 30px 0;
+  }
+  .info2 {
+    margin: 100px 20px 100px 20px;
+  }
+  #demo {
+    width: auto;
+    background-color: #fcb906;
+    width: 100%;
+    margin: 0;
+    color: white;
+    height: 6.0rem;
+    padding: 20px 0 20px 0;
+  }
+  #orange {
+    background-color: #fcb906;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+  }
+  #login {
+    margin: -50px 100px 0px 280px;
+  }
+  legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+  }
+  fieldset {
+    margin: 100px;
+    text-align: center;
+  }
+  #join {
+    width: 100%;
+    height: 9.0rem;
+    background-color: darkgrey;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border: 2px solid #888;
+    width: 80%;
+    animation-name: slidein;
+    animation-duration: 0.8s;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .close:hover, .c lose:focus {
+    color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #46494f;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px;
+  }
+  #aaa {
+    border-radius: 0% 50% 0% 50%;
+    border: solid 1px black;
+  }
+  #bbb {
+    border-radius: 50% 0 50% 0%;
+    border: solid 1px black;
+  }
+  #md {
+    font-size: 1.2rem;
+  }
+  #logos {
+    max-height: 100%;
+    width: 100%;
+  }
+  #sl {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px 50px 100px;
+  }
+}
